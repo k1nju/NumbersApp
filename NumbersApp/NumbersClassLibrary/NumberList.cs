@@ -26,13 +26,13 @@ namespace NumbersClassLibrary
                 numbers.Add(random.Next(-1000, 1000));
             }
         }
-        public double GetSum()
+        public void GetSum()
         {
-            stopwatch = Stopwatch.StartNew();
-
-
-
-            return Stopwatch.
+            int summary = 0;
+            for (int i = 0; i < numbers.Count ; i++)
+            {
+                summary += numbers[i];
+            }
         }
 
         public int GetSumParallel(int processors)
